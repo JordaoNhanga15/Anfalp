@@ -1,0 +1,856 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Css/style.css">
+
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+        google.charts.load('current', {'packages':['corechart']});
+        google.charts.setOnLoadCallback(drawChart);
+  
+        function drawChart() {
+  
+          var data = google.visualization.arrayToDataTable([
+            ['Task', 'Hours per Day'],
+            ['Work',     11],
+            ['Eat',      2],
+            ['Commute',  2],
+            ['Watch TV', 2],
+            ['Sleep',    7]
+          ]);
+  
+          var options = {
+            title: 'My Daily Activities'
+          };
+  
+          var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+  
+          chart.draw(data, options);
+        }
+      </script>
+</head>
+<body>
+    <header>
+        <div class="panel">
+            <div class="panel_a"><img src="img/79d51e5c47c6bc636b14a272202b074c.jpg" alt="" class="logotipo"></div>
+            <div class="panel_b"><img src="img/Icones/menu_32px.png" alt="" class="menu_bar"></div>
+        </div>
+        
+    <ul class="ul_container">
+        
+        <li><a href="">Home</a></li>
+        <li><a href="">About</a></li>
+        <li><a href="">Portfolio <img class="drop" src="img/Icones/sort_down_filled_50px.png" alt=""> </a>
+        <ul class="sub-menu">
+            <li><a href="">Projects 1</a></li>
+            <li><a href="">Projects 2 <img class="drop" src="img/Icones/sort_down_filled_50px.png" alt=""> </a>
+            <ul class="sub-menu">
+                <li><a href="">sub_projects 1</a></li>
+                <li><a href="">sub_projects 1</a></li>
+            </ul>
+            </li>
+            <li><a href="">Projects 3</a></li>
+        </ul>
+        </li>
+        <li><a href="">Contact</a></li>
+        <li><a href="">Services <img class="drop" src="img/Icones/sort_down_filled_50px.png" alt=""> </a>
+        <ul class="sub-menu">
+            <li><a href="">services 1</a></li>
+            <li><a href="">services 2</a></li>
+            <li><a href="">services 3</a></li>
+        </ul>
+        </li>
+
+        <li class="place"><div class="pla"><img src="img/Icones/search_30px.png" alt=""><input type="text" name="" id="" placeholder="search"></div></li>
+    </ul>
+</header>
+<section id="banner">
+    <div class="banner">
+    <div class="banner-box">
+        <h1>slider hideline</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci aliquam expedita eos sunt, saepe sed eum voluptate ab unde sit numquam? Aliquam molestias quas iure voluptates nisi deleniti illum nulla.</p>
+    </div>
+    <div class="banner_btn"><a href="">read More</a></div>
+</div>
+<aside class="aside">
+    <img src="img/Icones/arrows_long_left_32px.png" alt="" class="arrows" id="arrows_left">
+    <div class="radios">
+    <div class="radio"></div>
+    <div class="radio"></div>
+    <div class="radio"></div>
+    <div class="radio"></div>
+    <div class="radio"></div>
+    </div>
+    <img src="img/Icones/arrows_long_right_32px.png" alt="" class="arrows" id="arrows_right">
+</aside>
+</section>
+<section id="portifolio_container">
+
+    <div class="video-container">
+        <div class="video">
+        <video width="700px" height="550px" src="img/videos/Coldplay - The Scientist.mp4" autoplay="true" controls="true"></video>
+     </div>
+            <div class="video_anuncio">
+                <h1>article one headline</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati nam fuga odit ducimus ullam, temporibus, reiciendis, facilis officia earum et incidunt tempora hic velit. Dicta sint aliquid sed ullam? Explicabo.
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto ipsum exercitationem voluptatibus iste ad dolorem unde suscipit id. Aspernatur incidunt, laudantium quidem quis voluptatem esse quo et earum doloremque minima.
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi corporis eligendi ad doloribus omnis aliquam iure cumque numquam eum culpa nostrum nulla ut sint impedit, incidunt ex distinctio non animi!
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex rem culpa nam maiores sit fuga incidunt necessitatibus eveniet consequuntur pariatur perferendis est, placeat vel magni natus maxime. Sint, nulla quasi?
+                </p>
+                <div class="btn-video">
+                <a href="">read more</a>
+                </div>
+            </div>
+    </div>
+
+    <!--div class="portifolio_big">
+
+        <div class="portifolio">
+
+        <article class="work">
+            <img src="imagens/products-1.jpeg" alt="" class="img-work">
+            <div class="img-overlay">
+                <div class="text">
+                    <h1>Titular</h1>
+                    <p>Luanda, ANGOLA</p>
+                </div>
+                <div class="img-icon">
+                    <a href=""><img src="Icones/right_64px.png" alt=""></a>
+                </div>
+            </div>
+        </article>
+
+        <article class="work">
+            <img src="imagens/products-1.jpeg" alt="" class="img-work">
+            <div class="img-overlay">
+                <div class="text">
+                    <h1>Titular</h1>
+                    <p>Luanda, ANGOLA</p>
+                </div>
+                <div class="img-icon">
+                    <a href=""><img src="Icones/right_64px.png" alt=""></a>
+                </div>
+            </div>
+        </article>
+
+        <article class="work">
+            <img src="imagens/products-1.jpeg" alt="" class="img-work">
+            <div class="img-overlay">
+                <div class="text">
+                    <h1>Titular</h1>
+                    <p>Luanda, ANGOLA</p>
+                </div>
+                <div class="img-icon">
+                    <a href=""><img src="Icones/right_64px.png" alt=""></a>
+                </div>
+            </div>
+        </article>
+
+        <article class="work">
+            <img src="imagens/products-1.jpeg" alt="" class="img-work">
+            <div class="img-overlay">
+                <div class="text">
+                    <h1>Titular</h1>
+                    <p>Luanda, ANGOLA</p>
+                </div>
+                <div class="img-icon">
+                    <a href=""><img src="Icones/right_64px.png" alt=""></a>
+                </div>
+            </div>
+        </article>
+
+        <article class="work">
+            <img src="imagens/products-1.jpeg" alt="" class="img-work">
+            <div class="img-overlay">
+                <div class="text">
+                    <h1>Titular</h1>
+                    <p>Luanda, ANGOLA</p>
+                </div>
+                <div class="img-icon">
+                    <a href=""><img src="Icones/right_64px.png" alt=""></a>
+                </div>
+            </div>
+        </article>
+
+        <article class="work">
+            <img src="imagens/products-1.jpeg" alt="" class="img-work">
+            <div class="img-overlay">
+                <div class="text">
+                    <h1>Titular</h1>
+                    <p>Luanda, ANGOLA</p>
+                </div>
+                <div class="img-icon">
+                    <a href=""><img src="Icones/right_64px.png" alt=""></a>
+                </div>
+            </div>
+        </article>
+
+        <article class="work">
+            <img src="imagens/products-1.jpeg" alt="" class="img-work">
+            <div class="img-overlay">
+                <div class="text">
+                    <h1>Titular</h1>
+                    <p>Luanda, ANGOLA</p>
+                </div>
+                <div class="img-icon">
+                    <a href=""><img src="Icones/right_64px.png" alt=""></a>
+                </div>
+            </div>
+        </article>
+
+        <article class="work">
+            <img src="imagens/products-1.jpeg" alt="" class="img-work">
+            <div class="img-overlay">
+                <div class="text">
+                    <h1>Titular</h1>
+                    <p>Luanda, ANGOLA</p>
+                </div>
+                <div class="img-icon">
+                    <a href=""><img src="Icones/right_64px.png" alt=""></a>
+                </div>
+            </div>
+        </article>
+
+        <article class="work">
+            <img src="imagens/products-1.jpeg" alt="" class="img-work">
+            <div class="img-overlay">
+                <div class="text">
+                    <h1>Titular</h1>
+                    <p>Luanda, ANGOLA</p>
+                </div>
+                <div class="img-icon">
+                    <a href=""><img src="Icones/right_64px.png" alt=""></a>
+                </div>
+            </div>
+        </article>
+
+        <article class="work">
+            <img src="imagens/products-1.jpeg" alt="" class="img-work">
+            <div class="img-overlay">
+                <div class="text">
+                    <h1>Titular</h1>
+                    <p>Luanda, ANGOLA</p>
+                </div>
+                <div class="img-icon">
+                    <a href=""><img src="Icones/right_64px.png" alt=""></a>
+                </div>
+            </div>
+        </article>
+
+        <article class="work">
+            <img src="imagens/products-1.jpeg" alt="" class="img-work">
+            <div class="img-overlay">
+                <div class="text">
+                    <h1>Titular</h1>
+                    <p>Luanda, ANGOLA</p>
+                </div>
+                <div class="img-icon">
+                    <a href=""><img src="Icones/right_64px.png" alt=""></a>
+                </div>
+            </div>
+        </article>
+
+        <article class="work">
+            <img src="imagens/products-1.jpeg" alt="" class="img-work">
+            <div class="img-overlay">
+                <div class="text">
+                    <h1>Titular</h1>
+                    <p>Luanda, ANGOLA</p>
+                </div>
+                <div class="img-icon">
+                    <a href=""><img src="Icones/right_64px.png" alt=""></a>
+                </div>
+            </div>
+        </article>
+
+        <article class="work">
+            <img src="imagens/products-1.jpeg" alt="" class="img-work">
+            <div class="img-overlay">
+                <div class="text">
+                    <h1>Titular</h1>
+                    <p>Luanda, ANGOLA</p>
+                </div>
+                <div class="img-icon">
+                    <a href=""><img src="Icones/right_64px.png" alt=""></a>
+                </div>
+            </div>
+        </article>
+        <article class="work">
+            <img src="imagens/products-1.jpeg" alt="" class="img-work">
+            <div class="img-overlay">
+                <div class="text">
+                    <h1>Titular</h1>
+                    <p>Luanda, ANGOLA</p>
+                </div>
+                <div class="img-icon">
+                    <a href=""><img src="Icones/right_64px.png" alt=""></a>
+                </div>
+            </div>
+        </article>
+
+        <article class="work">
+            <img src="imagens/products-1.jpeg" alt="" class="img-work">
+            <div class="img-overlay">
+                <div class="text">
+                    <h1>Titular</h1>
+                    <p>Luanda, ANGOLA</p>
+                </div>
+                <div class="img-icon">
+                    <a href=""><img src="Icones/right_64px.png" alt=""></a>
+                </div>
+            </div>
+        </article>
+
+        <article class="work">
+            <img src="imagens/products-1.jpeg" alt="" class="img-work">
+            <div class="img-overlay">
+                <div class="text">
+                    <h1>Titular</h1>
+                    <p>Luanda, ANGOLA</p>
+                </div>
+                <div class="img-icon">
+                    <a href=""><img src="Icones/right_64px.png" alt=""></a>
+                </div>
+            </div>
+        </article>
+
+        <article class="work">
+            <img src="imagens/products-1.jpeg" alt="" class="img-work">
+            <div class="img-overlay">
+                <div class="text">
+                    <h1>Titular</h1>
+                    <p>Luanda, ANGOLA</p>
+                </div>
+                <div class="img-icon">
+                    <a href=""><img src="Icones/right_64px.png" alt=""></a>
+                </div>
+            </div>
+        </article>
+
+        <article class="work">
+            <img src="imagens/products-1.jpeg" alt="" class="img-work">
+            <div class="img-overlay">
+                <div class="text">
+                    <h1>Titular</h1>
+                    <p>Luanda, ANGOLA</p>
+                </div>
+                <div class="img-icon">
+                    <a href=""><img src="Icones/right_64px.png" alt=""></a>
+                </div>
+            </div>
+        </article>
+
+    </div>
+    <div class="link">
+        <a href="" class="arrow"><img  src="Icones/left_24px.png" alt=""></a>
+        
+        <a href="" class="pages">1</a>
+        <a href="" class="pages">2</a>
+        <a href="" class="pages">3</a>
+
+        <a href="" class="arrow"><img  src="Icones/chevron_right_26px.png" alt=""></a>
+    </div>
+    </div-->
+
+</section>
+<section id="portifolio_big">
+    <div class="portifolio_big">
+
+        <div class="portifolio">
+
+        <article class="work">
+            <img src="img/products-1.jpeg" alt="" class="img-work">
+            <div class="img-overlay">
+                <div class="text">
+                    <h1>Titular</h1>
+                    <p>Luanda, ANGOLA</p>
+                </div>
+                <div class="img-icon">
+                    <a href=""><img src="img/Icones/right_64px.png" alt=""></a>
+                </div>
+            </div>
+        </article>
+
+        <article class="work">
+            <img src="img/products-2.jpeg" alt="" class="img-work">
+            <div class="img-overlay">
+                <div class="text">
+                    <h1>Titular</h1>
+                    <p>Luanda, ANGOLA</p>
+                </div>
+                <div class="img-icon">
+                    <a href=""><img src="img/Icones/right_64px.png" alt=""></a>
+                </div>
+            </div>
+        </article>
+
+        <article class="work">
+            <img src="img/products-3.jpeg" alt="" class="img-work">
+            <div class="img-overlay">
+                <div class="text">
+                    <h1>Titular</h1>
+                    <p>Luanda, ANGOLA</p>
+                </div>
+                <div class="img-icon">
+                    <a href=""><img src="img/Icones/right_64px.png" alt=""></a>
+                </div>
+            </div>
+        </article>
+
+        <article class="work">
+            <img src="img/products-4.jpeg" alt="" class="img-work">
+            <div class="img-overlay">
+                <div class="text">
+                    <h1>Titular</h1>
+                    <p>Luanda, ANGOLA</p>
+                </div>
+                <div class="img-icon">
+                    <a href=""><img src="img/Icones/right_64px.png" alt=""></a>
+                </div>
+            </div>
+        </article>
+
+        <article class="work">
+            <img src="img/products-5.jpeg" alt="" class="img-work">
+            <div class="img-overlay">
+                <div class="text">
+                    <h1>Titular</h1>
+                    <p>Luanda, ANGOLA</p>
+                </div>
+                <div class="img-icon">
+                    <a href=""><img src="img/Icones/right_64px.png" alt=""></a>
+                </div>
+            </div>
+        </article>
+
+        <article class="work">
+            <img src="img/products-6.jpeg" alt="" class="img-work">
+            <div class="img-overlay">
+                <div class="text">
+                    <h1>Titular</h1>
+                    <p>Luanda, ANGOLA</p>
+                </div>
+                <div class="img-icon">
+                    <a href=""><img src="img/Icones/right_64px.png" alt=""></a>
+                </div>
+            </div>
+        </article>
+
+        <article class="work">
+            <img src="img/projects-10.jpeg" alt="" class="img-work">
+            <div class="img-overlay">
+                <div class="text">
+                    <h1>Titular</h1>
+                    <p>Luanda, ANGOLA</p>
+                </div>
+                <div class="img-icon">
+                    <a href=""><img src="img/Icones/right_64px.png" alt=""></a>
+                </div>
+            </div>
+        </article>
+
+        <article class="work">
+            <img src="img/projects-6.jpeg" alt="" class="img-work">
+            <div class="img-overlay">
+                <div class="text">
+                    <h1>Titular</h1>
+                    <p>Luanda, ANGOLA</p>
+                </div>
+                <div class="img-icon">
+                    <a href=""><img src="img/Icones/right_64px.png" alt=""></a>
+                </div>
+            </div>
+        </article>
+
+        <article class="work">
+            <img src="img/current-projects-1.jpeg" alt="" class="img-work">
+            <div class="img-overlay">
+                <div class="text">
+                    <h1>Titular</h1>
+                    <p>Luanda, ANGOLA</p>
+                </div>
+                <div class="img-icon">
+                    <a href=""><img src="img/Icones/right_64px.png" alt=""></a>
+                </div>
+            </div>
+        </article>
+
+        <article class="work">
+            <img src="img/current-projects-2.jpeg" alt="" class="img-work">
+            <div class="img-overlay">
+                <div class="text">
+                    <h1>Titular</h1>
+                    <p>Luanda, ANGOLA</p>
+                </div>
+                <div class="img-icon">
+                    <a href=""><img src="img/Icones/right_64px.png" alt=""></a>
+                </div>
+            </div>
+        </article>
+
+        <article class="work">
+            <img src="img/current-projects-3.jpeg" alt="" class="img-work">
+            <div class="img-overlay">
+                <div class="text">
+                    <h1>Titular</h1>
+                    <p>Luanda, ANGOLA</p>
+                </div>
+                <div class="img-icon">
+                    <a href=""><img src="img/Icones/right_64px.png" alt=""></a>
+                </div>
+            </div>
+        </article>
+
+        <article class="work">
+            <img src="img/banner-img.jpeg" alt="" class="img-work">
+            <div class="img-overlay">
+                <div class="text">
+                    <h1>Titular</h1>
+                    <p>Luanda, ANGOLA</p>
+                </div>
+                <div class="img-icon">
+                    <a href=""><img src="img/Icones/right_64px.png" alt=""></a>
+                </div>
+            </div>
+        </article>
+
+        <article class="work">
+            <img src="img/background-banner.jpg" alt="" class="img-work">
+            <div class="img-overlay">
+                <div class="text">
+                    <h1>Titular</h1>
+                    <p>Luanda, ANGOLA</p>
+                </div>
+                <div class="img-icon">
+                    <a href=""><img src="img/Icones/right_64px.png" alt=""></a>
+                </div>
+            </div>
+        </article>
+
+        <article class="work">
+            <img src="img/Center.jpeg" alt="" class="img-work">
+            <div class="img-overlay">
+                <div class="text">
+                    <h1>Titular</h1>
+                    <p>Luanda, ANGOLA</p>
+                </div>
+                <div class="img-icon">
+                    <a href=""><img src="img/Icones/right_64px.png" alt=""></a>
+                </div>
+            </div>
+        </article>
+
+        <article class="work">
+            <img src="img/services.jpeg" alt="" class="img-work">
+            <div class="img-overlay">
+                <div class="text">
+                    <h1>Titular</h1>
+                    <p>Luanda, ANGOLA</p>
+                </div>
+                <div class="img-icon">
+                    <a href=""><img src="img/Icones/right_64px.png" alt=""></a>
+                </div>
+            </div>
+        </article>
+
+        <article class="work">
+            <img src="img/space_exploration_4k-3840x2160.jpg" alt="" class="img-work">
+            <div class="img-overlay">
+                <div class="text">
+                    <h1>Titular</h1>
+                    <p>Luanda, ANGOLA</p>
+                </div>
+                <div class="img-icon">
+                    <a href=""><img src="img/Icones/right_64px.png" alt=""></a>
+                </div>
+            </div>
+        </article>
+
+        <article class="work">
+            <img src="img/projects-4.jpeg" alt="" class="img-work">
+            <div class="img-overlay">
+                <div class="text">
+                    <h1>Titular</h1>
+                    <p>Luanda, ANGOLA</p>
+                </div>
+                <div class="img-icon">
+                    <a href=""><img src="img/Icones/right_64px.png" alt=""></a>
+                </div>
+            </div>
+        </article>
+
+        <article class="work">
+            <img src="img/projects-5.jpeg" alt="" class="img-work">
+            <div class="img-overlay">
+                <div class="text">
+                    <h1>Titular</h1>
+                    <p>Luanda, ANGOLA</p>
+                </div>
+                <div class="img-icon">
+                    <a href=""><img src="img/Icones/right_64px.png" alt=""></a>
+                </div>
+            </div>
+        </article>
+
+    </div>
+    <div class="link">
+        <a href="" class="arrow"><img  src="img/Icones/left_24px.png" alt=""></a>
+        
+        <a href="" class="pages">1</a>
+        <a href="" class="pages">2</a>
+        <a href="" class="pages">3</a>
+
+        <a href="" class="arrow"><img  src="img/Icones/chevron_right_26px.png" alt=""></a>
+    </div>
+    </div>
+</section>
+
+<section id="profile-container">
+    <div class="profile">
+        <img src="img/ji.jpg" alt="" class="picture">
+        <div class="story-container">
+            <div class="story">125 <small>Following</small></div>
+            <div class="story">85 <small>Followers</small></div>
+            <div class="story">210 <small>uploaded</small></div>
+        </div>
+        <div class="buttons">
+            <a href="" class="button">followns</a>
+            <a href="">followers</a>
+        </div>
+    </div>
+    <div class="message-container">
+
+        <div class="information-container">
+
+            <div class="information">
+
+            <img src="img/ji.jpg" alt="" class="picture-msg">
+
+            <div class="user">
+                <div class="state">
+                <h3>Jordao de Oliveira</h3>
+                <div class="rad"></div>
+            </div>
+                <div class="locate"><img src="img/Icones/location_filled_50px.png" alt="">Luanda</div>
+                <div class="btn-message">
+                    <button class="btn-follows">follows</button>
+                    <button class="btn-messages">message</button>
+                </div>
+            </div>
+
+
+        </div>
+        <form action="" id="message" class="form1" method="dialog">
+            <div class="all">
+                <div class="my-msg"><small> Ola chamo-me jordao </small></div>
+                <div class="your-msg"><small>Jordao eu sou a XXX </small></div>
+            </div>
+            <div class="send">
+                <input type="text" name="" id="" placeholder="send your message">
+                <button class="btn-send"><img src="img/Icones/paper_plane_filled_50px.png" alt=""></button>
+            </div>
+        </form>
+        
+        </div>
+
+        <div class="information-container">
+
+            <div class="information">
+
+            <img src="img/team-4.jpg" alt="" class="picture-msg">
+
+            <div class="user">
+                <div class="state">
+                <h3>Jordao de Oliveira</h3>
+                <div class="rad"></div>
+            </div>
+                <div class="locate"><img src="img/Icones/location_filled_50px.png" alt="">Luanda</div>
+                <div class="btn-message">
+                    <button class="btn-follows">follows</button>
+                    <button class="btn-messages">message</button>
+                </div>
+            </div>
+
+
+        </div>
+        <form action="" id="message" class="form1" method="dialog">
+            <div class="all">
+                <div class="my-msg"><small> Ola chamo-me jordao </small></div>
+                <div class="your-msg"><small>Jordao eu sou a XXX </small></div>
+            </div>
+            <div class="send">
+                <input type="text" name="" id="" placeholder="send your message">
+                <button class="btn-send"><img src="img/Icones/paper_plane_filled_50px.png" alt=""></button>
+            </div>
+        </form>
+        
+        </div>
+
+        <div class="information-container">
+
+            <div class="information">
+
+            <img src="img/team-2.jpg" alt="" class="picture-msg">
+
+            <div class="user">
+                <div class="state">
+                <h3>Jordao de Oliveira</h3>
+                <div class="rad"></div>
+            </div>
+                <div class="locate"><img src="img/Icones/location_filled_50px.png" alt="">Luanda</div>
+                <div class="btn-message">
+                    <button class="btn-follows">follows</button>
+                    <button class="btn-messages">message</button>
+                </div>
+            </div>
+
+
+        </div>
+        <form action="controler.php" id="message" class="form1" method="dialog">
+            <div class="all">
+                <div class="my-msg"><small> Ola chamo-me jordao </small></div>
+                <div class="your-msg"><small>Jordao eu sou a XXX </small></div>
+            </div>
+            <div class="send">
+                <input type="text" name="" id="" placeholder="send your message">
+                <button class="btn-send"><img src="img/Icones/paper_plane_filled_50px.png" alt=""></button>
+            
+            </div>
+        </form>
+        
+        </div>
+    </div>
+</section>
+
+<section id="estatisticas">
+    <div id="calendar-container">
+        <div class="calendar-header">
+            <span id="calendar-month-header"></span>
+        </div>
+        <div id="calendar-dates">
+
+        </div>
+    </div>
+    <div id="charts">
+        <div class="charts-1">
+
+        </div>
+        <div id="piechart" style="width: 230px; height: 260px; margin: auto;"></div>
+    </div>
+</section>
+
+<section id="skills">
+    <div class="skills-container">
+    <div class="skills">
+
+        <h1>Skills</h1>
+        <div class="skill-a">
+        <div class="news-skills">
+            <h3>Lorem ipsum </h3>
+            <small class="percentagem">13%</small>
+        </div>
+        <div class="underline"><div class="line"></div></div>
+    </div>
+
+    <div class="skill-a">
+        <div class="news-skills">
+            <h3>Lorem ipsum dolor</h3>
+            <small class="percentagem">13%</small>
+        </div>
+        <div class="underline"><div class="line"></div></div>
+    </div>
+
+
+    <div class="skill-a">
+        <div class="news-skills">
+            <h3>Lorem ipsum dolor</h3>
+            <small class="percentagem">13%</small>
+        </div>
+        <div class="underline"><div class="line"></div></div>
+    </div>
+
+
+    <div class="skill-a">
+        <div class="news-skills">
+            <h3>Lorem ipsum dolor</h3>
+            <small class="percentagem">13%</small>
+        </div>
+        <div class="underline"><div class="line"></div></div>
+    </div>
+
+</div>
+    
+</div>
+
+<div class="stats-container">
+    <div class="stats">
+        <div class="h1">
+            <h1>stats <small>last 30 days</small></h1>
+        </div>
+        <div class="notification">
+            <div class="noti">
+                <h2>230</h2>
+                <small>visit</small>
+            </div>
+            <div class="noti">
+                <h2>230</h2>
+                <small>like</small>
+            </div>
+            <div class="noti">
+                <h2>230</h2>
+                <small>commentary</small>
+            </div>
+            <div class="noti">
+                <h2>230</h2>
+                <small>download</small>
+            </div>
+            <div class="noti">
+                <h2>230</h2>
+                <small>share</small>
+            </div>
+        </div>
+    </div>
+    <div class="another">
+        <div class="fotos">
+            <img src="img/projects-2.jpeg" alt="" class="foto">
+            <img src="img/projects-10.jpeg" alt="" class="foto">
+            <img src="img/space_exploration_4k-3840x2160.jpg" alt="" class="foto">
+            <img src="img/Icones/arrows_long_right_32px.png" alt="">
+        </div>
+        <div class="documen">
+            <div class="doc">
+                <h3>@jordao</h3> <small>Jun,2020</small>
+            </div>
+            <div class="doc-p">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut nesciunt, in labore illum sunt similique quo iure </p>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+
+<footer id="footer">
+    <div class="lado-a">
+        <a href=""><img src="img/Icones/Facebook_24px.png" alt=""></a>
+        <a href=""><img src="img/Icones/twitter_26px.png" alt=""></a>
+        <a href=""><img src="img/Icones/google_plus_24px.png" alt=""></a>
+        <a href=""><img src="img/Icones/linkedin_26px.png" alt=""></a>
+        <a href=""><img src="img/Icones/pinterest_26px.png" alt=""></a>
+        <a href=""><img src="img/Icones/icosahedron_30px.png" alt=""></a>
+    </div>
+    <div class="lado-b">
+        <div class="textBox-footer">
+            <img src="img/Icones/paper_plane_filled_50px.png" alt="">
+            <input type="text" name="" id="" placeholder="subscribe">
+        </div>
+    </div>
+</footer>
+    <script src="Script/srcipt.js"></script>
+    
+    
+    
+</body>
+</html>

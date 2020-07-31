@@ -1,0 +1,204 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{background: #ccc;}
+#conta{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-55%) ;
+}
+.container{
+    background: blue;
+    border-radius: 2rem;
+    padding: 10px 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .4);
+    width: 390px;
+    height: 430px;
+    
+}
+/*
+.container:hover{
+    transform: translate(-48%,70%);
+}*/
+
+
+ .login_header{
+    top: -50px;
+    left: calc(50% - 50px);
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    position: absolute;
+}
+.eimk_header h4{
+    color: #a06c47;
+    text-transform: uppercase;
+}
+.eimk_body{
+    margin: 50px 0;
+    padding: 50px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.place-container{
+    padding: 0px 0;
+    width: 100%;
+    height: 150px;
+    overflow: hidden;
+}
+.place-container .a{
+    text-align: center;
+    padding: 30px 0 30px;
+    font-family: 'Times New Roman', Times, serif;
+    text-transform: capitalize;
+    color: white;
+    font-style: italic;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+.place{
+    padding: 0px 20px;
+    display: flex;
+    border-radius: 25px;
+    background-color: white;
+    margin: 20px 0;
+}
+.place input{
+    padding: 0 30px;
+    line-height: 2;
+    border: 0;
+    outline: none;
+}
+.place input::placeholder{
+    color: black;
+    text-align: center;
+}
+.place img{
+    width: 30px;
+    height: 30px;
+    padding: 3px;
+}
+.eimk_body .btn{
+    margin: 0px 0 10px 0; 
+    padding: 0px 20px;
+    text-align: center;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+.eimk_body button{
+    display: flex;
+    margin: 10px 0;
+    background: #a06c47;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 20px;
+    outline: none;
+    border: 0;
+    border-radius: 50px;
+    justify-content: center;
+    transition: background 1s ease;
+    outline: none;
+}
+.eimk_body button:hover{
+    background: #1F3035;
+    color: #e9d8cb;
+}
+
+  /* evntos   */
+.container{
+    animation-name: opacity_;
+    animation-duration: 800ms;
+}
+
+
+
+@keyframes opacity_{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1; 
+    }
+}
+
+/* aula_2   */
+.place:nth-child(1){
+    animation: right_ 1s backwards;
+}
+.place:nth-child(2){
+    animation: right_ 1s  250ms backwards;
+}
+
+.eimk_body button{
+    animation: right_ 1s  400ms backwards;
+}
+
+@keyframes right_{
+    from{
+        transform: translateX(-125%);
+    }
+    to{
+        transform: translateX(0%);
+    }
+}
+
+/* aula_3   */
+.button {
+    animation: down 3s ease-in ;
+}
+
+@keyframes down{
+    from{
+        transform: translateY(0%);
+    }
+    to{
+        transform: translateY(100vh);
+    }
+}
+
+/* aula_4 */
+.nono{
+    animation: nono 1s linear  2  forwards,opacity_ paused;
+}
+
+@keyframes nono{
+    0%,100%{
+        transform: translateX(0%);
+    }
+    35%{
+        transform: translateX(-20%);
+    }
+    70%{
+        transform: translateX(20%);
+    }
+}
+
+
+/* squares li*/
+.squares li{
+    display: block;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0,.6);
+    animation: rotate_ 1s cubic-bezier(0.77, 0, 0.175, 1)  infinite  forwards;
+    list-style-type: none;
+}
+
+@keyframes rotate_{
+    from{
+        transform: translateY(0%);
+    }
+    to{
+        transform: translateY(-1000px) rotate(960deg);
+    }
+}
